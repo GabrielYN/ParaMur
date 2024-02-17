@@ -1,0 +1,226 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #002626;
+}
+
+.message {
+    padding: 10px 15px;
+    margin: 5px;
+    border-radius: 10px;
+    clear: both;
+    overflow-wrap: break-word;
+
+}
+
+h2{
+    width: 300px; /* Ancho fijo del elemento */
+    margin: 0 auto; /* Margen automático a la izquierda y derecha */
+    text-align: center;
+
+}
+.chat-container {
+    max-width: 1000px;
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+
+}
+
+.user-message img {
+    max-width: 100%;
+    border-radius: 10px;
+    align-items: center;
+    float: right;
+}
+
+#gif-user{
+    margin-right: 40px;
+    border-radius: 10px;
+    float: right;
+    width: 200px; /* Modifica el ancho según tu preferencia */
+    height: auto;
+}
+#gif-bot{
+    margin-left: 40px;
+    border-radius: 10px;
+    float: left;
+    width: 200px; /* Modifica el ancho según tu preferencia */
+    height: auto;
+}
+
+
+.user-message {
+    float: right;
+    background-color: #dcf8c6;
+    margin-right: 50px;
+}
+.user-responde-message{
+    float: right;
+    background-color: #929090;
+    margin-right: 60px;
+
+}
+.bot-responde-message{
+    float: left;
+    background-color: #929090;
+    margin-left: 60px;
+
+}
+
+
+
+.bot-message {
+    float: left;
+    background-color: #ffffff;
+    margin-left: 50px;
+
+}
+
+@keyframes appear {
+    from {
+        opacity: 0;
+        /* Empezar con una opacidad de 0 (oculto) */
+        transform: translateY(10px);
+        /* Empezar ligeramente desplazado hacia abajo */
+    }
+
+    to {
+        opacity: 1;
+        /* Terminar con una opacidad de 1 (visible) */
+        transform: translateY(0);
+        /* No hay desplazamiento vertical */
+    }
+}
+
+
+
+.chat-box {
+    height: 500px;
+    overflow-y: auto;
+    background-image: url("../img/wsp_fondo.png");
+
+    padding: 10px;
+    margin-bottom: 10px;
+    background-color: #EFE7DA;
+}
+.chat-box .message {
+    opacity: 0;
+}
+#user-input {
+    width: calc(90% - 0px);
+    padding: 0px;
+    position: absolute;
+    bottom: 7px;
+    left: 0px;
+    margin: 20px auto;
+
+
+
+}
+
+button {
+    padding: 8px 20px;
+    position: absolute;
+    bottom: 7px;
+    right: 90px;
+    margin: 20px auto;
+
+}
+
+
+#user-input {
+    width: calc(100% - 0px);
+    height: 40px;
+    border-radius: 10px;
+    background-color: #40414f;
+    transform: translate(0px, 0px);
+    box-shadow: 5px 5px #34343f;
+
+}
+
+.MsgInput {
+    font-size: 18px;
+    background-color: #40414f;
+    ;
+    border-radius: 5px;
+    color: white;
+    width: calc(100% - 100px);
+    padding: 8px;
+    position: absolute;
+    top: -16px;
+    left: 20px;
+    margin: 20px auto;
+    border: none;
+    outline: none;
+}
+
+.SendSVG {
+    float: right;
+    height: 30px;
+    border-width: 40px;
+    transform: translate(0px, 5px);
+    background-size: 10px;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+.SendSVG:hover {
+    background-color: #2b2b35;
+
+}
+
+.l {
+    position: absolute;
+    width: 0.4%;
+    /* Anchura relativa al contenedor padre */
+    height: 30px;
+    background-color: #2e2f38;
+    left: 95%;
+    /* Distancia del borde izquierdo del contenedor padre */
+    top: 5px;
+    /* Distancia del borde superior del contenedor padre */
+}
+
+/* Estilos para el scrollbar */
+::-webkit-scrollbar {
+    width: 10px;
+    /* Ancho del scrollbar */
+}
+
+/* Estilo de la barra de fondo del scrollbar */
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    /* Color de fondo */
+}
+
+/* Estilo del thumb (la parte que se desliza) del scrollbar */
+::-webkit-scrollbar-thumb {
+    background: #888;
+    /* Color del thumb */
+    border-radius: 5px;
+    /* Borde redondeado del thumb */
+}
+
+/* Estilo del thumb al pasar el cursor por encima */
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+    /* Color del thumb al pasar el cursor */
+}
+
+#textoAnimado {
+    font-family: 'Arial', sans-serif; /* Cambia 'Arial' por el estilo de letra que desees */
+    font-size: 18px; /* Cambia el tamaño de la letra según tus preferencias */
+    line-height: 1.5; /* Ajusta el espacio entre líneas */
+    letter-spacing: 1px; /* Ajusta el espaciado entre letras */
+    text-align: justify; /* Justifica el texto */
+}
+
+#fotosContainer img {
+    opacity: 0; /* Inicialmente, ocultar todas las imágenes */
+    transition: opacity 1s; /* Agregar una transición suave */
+}
+
+#fotosContainer img.show {
+    opacity: 1; /* Mostrar la imagen con una animación de opacidad */
+}

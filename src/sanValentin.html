@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat de WhatsApp</title>
+    <link rel="stylesheet" href="../src/styles/styles.css">
+
+</head>
+
+<body>
+    <audio src="../src/audios/Inside Out Theme [Piano Tutorial] (Synthesia)  Nadav Schneider.mp3" autoplay loop></audio>
+    <div class="chat-container">
+        <div class="chat-box" id="chat-box">
+            <!-- Mensajes predefinidos -->
+            <div id="textoAnimado">Esta es la memoria más reciente. Tenemos muchos días hermosos que voy a recordar para
+                el resto de mi vida. Pero el de nuestro primer 14 de febrero es para nunca olvidar. Sos la persona con
+                la que experimenté primeras cosas; no solo fuiste la primera y única persona con la que soy novio, sino
+                que también sos la única persona con la que pasé un día muy especial. Un día que nunca pensé en
+                celebrar, que me parecía tonto y eso jajajaj, envidia de algo que nunca pude tener y miedo a nunca
+                tenerlo. Por suerte, me tocó una personita muy especial en mi vida y agradezco que sea así y poder
+                vivirlo con vos. Así como experimenté mi primer 14 de febrero, quiero seguir aprendiendo, seguir
+                viviendo una vida con vos, ser un mejor novio y tener más 14 de febreros como este</div>
+
+
+            <div id="fotosContainer">
+                <img id="gif-bot" src="../src/img/WhatsApp Image 2024-02-14 at 22.35.32 (1).jpeg" alt="Foto 1">
+                <img id="gif-user" src="../src/img/WhatsApp Image 2024-02-14 at 22.35.32 (2).jpeg" alt="Foto 1">
+                <img id="gif-bot" src="../src/img/WhatsApp Image 2024-02-14 at 22.35.32 (3).jpeg" alt="Foto 1">
+                <img id="gif-user" src="../src/img/WhatsApp Image 2024-02-14 at 22.35.32 (4).jpeg" alt="Foto 1">
+                <img id="gif-bot" src="../src/img/WhatsApp Image 2024-02-14 at 22.35.32.jpeg" alt="Foto 1">
+
+            </div>
+           
+            <div id="user-input" class="Messagel">
+                <input title="Write Message" tabindex="i" pattern="\d+" placeholder="Escribe el mensaje.."
+                    class="MsgInput" type="text" id="messageInput">
+
+
+
+                <svg id="sendButton" xmlns="http://www.w3.org/2000/svg" version="1.0" width="30.000000pt"
+                    height="30.000000pt" viewBox="0 0 30.000000 30.000000" preserveAspectRatio="xMidYMid meet"
+                    class="SendSVG">
+
+                    <g transform="translate(0.000000,30.000000) scale(0.100000,-0.100000)" fill="#ffffff70"
+                        stroke="none">
+                        <path
+                            d="M44 256 c-3 -8 -4 -29 -2 -48 3 -31 5 -33 56 -42 28 -5 52 -13 52 -16 0 -3 -24 -11 -52 -16 -52 -9 -53 -9 -56 -48 -2 -21 1 -43 6 -48 10 -10 232 97 232 112 0 7 -211 120 -224 120 -4 0 -9 -6 -12 -14z">
+                        </path>
+                    </g>
+                </svg>
+            </div>
+
+            <script src="../src/js/app.js"></script>
+            <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+
+</body>
+
+</html>
